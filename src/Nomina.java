@@ -13,9 +13,11 @@ public class Nomina {
     }
 
     public int getHorasCalculadas(){
-        if(horasTrabajadas > 50);{
+        if(horasTrabajadas >= 50){
             horasTrabajadas = 50;
         }
+
+
         return horasTrabajadas;
     }
 
