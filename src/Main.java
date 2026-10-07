@@ -12,11 +12,19 @@ public class Main {
         String nombre = entrada.next();
 
         System.out.print("Ingrese las horas trabajadas: ");
-        float horasTrabajadas = entrada.nextFloat();
+        int horasTrabajadas = entrada.nextInt();
 
         System.out.print("Ingrese el pago por hora: ");
-        float pagoPorHora = entrada.nextFloat();
+        int pagoPorHora = entrada.nextInt();
         Nomina nominaEmpleado = new Nomina(clave, nombre, horasTrabajadas, pagoPorHora);
+
+        System.out.println(nominaEmpleado.getHorasCalculadas());
+        System.out.println(nominaEmpleado.calcularHorasNormales());
+        System.out.println(nominaEmpleado.calcularHorasExtra());
+        System.out.println(nominaEmpleado.calcularPagoNormal());
+        System.out.println(nominaEmpleado.calcularPagoExtra());
+        System.out.println(nominaEmpleado.calcularPagoTotal());
+
     }
 }
 
